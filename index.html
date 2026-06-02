@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klamath Campground Planting Guide</title>
+  <meta name="description" content="Field-friendly planting guide for the Knot Tablelands campground property near Beatty, Oregon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;
+      --color-bg: #f7f6f2; --color-surface: #f9f8f5; --color-surface-2: #fbfbf9; --color-surface-offset: #f3f0ec; --color-border: #d4d1ca; --color-divider: #dcd9d5;
+      --color-text: #28251d; --color-text-muted: #64625d; --color-text-faint: #8f8c86; --color-text-inverse: #f9f8f4;
+      --color-primary: #01696f; --color-primary-hover: #0c4e54; --color-primary-highlight: #d9ece8;
+      --color-success: #437a22; --color-warning: #964219; --color-error: #a12c7b; --color-gold: #d19900;
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-xl: 1rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px oklch(0.2 0.01 80 / 0.06); --shadow-md: 0 4px 12px oklch(0.2 0.01 80 / 0.08); --shadow-lg: 0 12px 32px oklch(0.2 0.01 80 / 0.12);
+      --font-display: 'Boska', Georgia, serif; --font-body: 'Satoshi', Inter, sans-serif;
+      --content: 1180px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1c1b19; --color-surface-2: #201f1d; --color-surface-offset: #22211f; --color-border: #393836; --color-divider: #262523;
+      --color-text: #e2dfd8; --color-text-muted: #ada9a1; --color-text-faint: #7b776f; --color-text-inverse: #1c1b19;
+      --color-primary: #4f98a3; --color-primary-hover: #68aab3; --color-primary-highlight: #2f3f40;
+      --color-success: #6daa45; --color-warning: #d08c5f; --color-error: #d163a7; --color-gold: #e8af34;
+      --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.2); --shadow-md: 0 4px 12px oklch(0 0 0 / 0.3); --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.4);
+    }
+    *,:before,:after{box-sizing:border-box;margin:0;padding:0}
+    html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:5rem}
+    body{min-height:100dvh;line-height:1.6;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg)}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{color:var(--color-primary)}
+    button,input,select,textarea{font:inherit;color:inherit}
+    button{cursor:pointer;border:none;background:none}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:absolute;left:var(--space-4);top:-3rem;background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-2) var(--space-4);border-radius:var(--radius-md);z-index:999}
+    .skip-link:focus{top:var(--space-3)}
+    .container{width:min(calc(100% - 2rem),var(--content));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:50;background:color-mix(in oklab,var(--color-bg) 88%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in oklab,var(--color-text) 10%, transparent)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-3) 0}
+    .brand{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:inherit}
+    .logo{width:2.5rem;height:2.5rem;padding:0.35rem;border-radius:var(--radius-md);background:var(--color-surface);border:1px solid color-mix(in oklab,var(--color-text) 10%, transparent);box-shadow:var(--shadow-sm)}
+    .brand-text strong{display:block;font-size:var(--text-sm)}
+    .brand-text span{display:block;font-size:var(--text-xs);color:var(--color-text-muted)}
+    .header-actions{display:flex;align-items:center;gap:var(--space-2);flex-wrap:wrap}
+    .icon-btn,.chip,.jump-link{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.65rem 0.9rem;border-radius:var(--radius-full);border:1px solid color-mix(in oklab,var(--color-text) 10%, transparent);background:var(--color-surface);text-decoration:none;color:inherit}
+    .icon-btn:hover,.chip:hover,.jump-link:hover{background:var(--color-surface-offset)}
+    .hero{padding:var(--space-10) 0 var(--space-8)}
+    .hero-grid{display:grid;gap:var(--space-6)}
+    .eyebrow{display:inline-flex;align-items:center;gap:0.5rem;padding:0.35rem 0.7rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    h1,h2,h3{line-height:1.1;text-wrap:balance}
+    h1{font-family:var(--font-display);font-size:var(--text-2xl);max-width:12ch}
+    h2{font-size:var(--text-xl);font-family:var(--font-display);margin-bottom:var(--space-3)}
+    h3{font-size:var(--text-lg)}
+    p,li{max-width:72ch;text-wrap:pretty}
+    .lede{font-size:var(--text-lg);color:var(--color-text-muted);max-width:58ch}
+    .hero-actions,.jump-grid,.tag-list,.meta-grid,.legend{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+    .btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:0.85rem 1rem;border-radius:var(--radius-full);font-weight:700;text-decoration:none;border:1px solid transparent}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse)}
+    .btn-primary:hover{background:var(--color-primary-hover)}
+    .btn-secondary{background:var(--color-surface);color:var(--color-text);border-color:color-mix(in oklab,var(--color-text) 12%, transparent)}
+    .section{padding:var(--space-8) 0}
+    .section + .section{border-top:1px solid var(--color-divider)}
+    .panel{background:var(--color-surface);border:1px solid color-mix(in oklab,var(--color-text) 10%, transparent);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .panel-pad{padding:var(--space-5)}
+    .kpi-grid,.overview-grid,.controls-grid,.plant-grid,.notes-grid{display:grid;gap:var(--space-4)}
+    .kpi-grid{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-top:var(--space-5)}
+    .kpi{padding:var(--space-4);background:var(--color-surface-2);border-radius:var(--radius-lg);border:1px solid color-mix(in oklab,var(--color-text) 8%, transparent)}
+    .kpi strong{display:block;font-size:var(--text-lg)}
+    .muted{color:var(--color-text-muted)}
+    .tiny{font-size:var(--text-xs);color:var(--color-text-faint)}
+    .overview-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .callout{padding:var(--space-4);border-radius:var(--radius-lg);background:var(--color-surface-offset)}
+    .callout.warn{background:color-mix(in oklab,var(--color-warning) 10%, var(--color-surface))}
+    .callout.good{background:color-mix(in oklab,var(--color-success) 12%, var(--color-surface))}
+    .callout.fyi{background:color-mix(in oklab,var(--color-primary) 10%, var(--color-surface))}
+    .controls-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));align-items:end}
+    label{display:block;font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--color-text-muted);margin-bottom:var(--space-2)}
+    input,select,textarea{width:100%;padding:0.8rem 0.9rem;border-radius:var(--radius-md);border:1px solid color-mix(in oklab,var(--color-text) 12%, transparent);background:var(--color-surface-2)}
+    textarea{min-height:180px;resize:vertical}
+    .plant-grid{grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))}
+    .plant-card{display:flex;flex-direction:column;gap:var(--space-4);padding:var(--space-5);background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid color-mix(in oklab,var(--color-text) 10%, transparent);box-shadow:var(--shadow-sm);content-visibility:auto}
+    .plant-head{display:flex;justify-content:space-between;gap:var(--space-3);align-items:flex-start}
+    .plant-name{font-size:var(--text-lg);max-width:22ch}
+    .status{display:inline-flex;align-items:center;gap:0.4rem;padding:0.3rem 0.65rem;border-radius:var(--radius-full);font-size:var(--text-xs);font-weight:700;white-space:nowrap}
+    .status.planted{background:color-mix(in oklab,var(--color-success) 15%, var(--color-surface));color:var(--color-success)}
+    .status.recommended{background:color-mix(in oklab,var(--color-primary) 15%, var(--color-surface));color:var(--color-primary)}
+    .status.experimental{background:color-mix(in oklab,var(--color-warning) 15%, var(--color-surface));color:var(--color-warning)}
+    .tag-list .tag{display:inline-flex;align-items:center;padding:0.35rem 0.65rem;border-radius:var(--radius-full);font-size:var(--text-xs);background:var(--color-surface-offset);border:1px solid color-mix(in oklab,var(--color-text) 8%, transparent)}
+    .meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3)}
+    .meta{padding:var(--space-3);background:var(--color-surface-2);border-radius:var(--radius-lg);border:1px solid color-mix(in oklab,var(--color-text) 8%, transparent)}
+    .meta strong{display:block;font-size:var(--text-xs);letter-spacing:0.04em;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:0.2rem}
+    .plant-body{display:grid;gap:var(--space-3)}
+    .plant-body section{padding-top:var(--space-2);border-top:1px solid color-mix(in oklab,var(--color-text) 8%, transparent)}
+    .plant-body ul{padding-left:1.2rem}
+    .plant-body a{text-decoration-thickness:1px;text-underline-offset:0.18em}
+    .map-wrap{display:grid;gap:var(--space-4)}
+    .map-shell{padding:var(--space-3);background:var(--color-surface);border-radius:var(--radius-xl);border:1px solid color-mix(in oklab,var(--color-text) 10%, transparent)}
+    .map-shell svg{width:100%;height:auto}
+    .legend span{display:inline-flex;align-items:center;gap:0.45rem;font-size:var(--text-sm)}
+    .legend i{display:inline-block;width:0.9rem;height:0.9rem;border-radius:999px}
+    .foot-grid{display:grid;gap:var(--space-4);grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .code-block{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:0.9rem;padding:var(--space-4);background:var(--color-surface-2);border-radius:var(--radius-lg);overflow:auto;border:1px solid color-mix(in oklab,var(--color-text) 8%, transparent)}
+    .empty{padding:var(--space-8);text-align:center;background:var(--color-surface-offset);border-radius:var(--radius-xl);color:var(--color-text-muted)}
+    .footer{padding:var(--space-8) 0 var(--space-10);color:var(--color-text-muted)}
+    @media (min-width: 900px){
+      .hero-grid{grid-template-columns:1.15fr 0.85fr;align-items:start}
+      .notes-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto !important;transition-duration:.01ms !important;animation-duration:.01ms !important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Klamath Campground Planting Guide home">
+        <svg class="logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M14 48L28 16L42 48" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 36H36" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M46 18V48" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M46 18C54 18 56 24 56 28C56 32 54 38 46 38" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">
+          <strong>Klamath Campground Planting Guide</strong>
+          <span>Knot Tablelands · field edition</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a class="jump-link" href="#map">Map</a>
+        <a class="jump-link" href="#plants">Plants</a>
+        <a class="jump-link" href="#notes">Notes</a>
+        <button class="icon-btn" data-theme-toggle aria-label="Switch to dark mode" title="Theme toggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero container" id="top">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Zone 6b default · static HTML · GitHub Pages ready</span>
+          <h1>Klamath Campground Planting Guide</h1>
+          <p class="lede">A field-friendly planting guide for the Knot Tablelands property near Beatty, Oregon — built for quick use on an iPhone or iPad, with enough detail to be useful and just enough humor to keep the shrubs from unionizing.</p>
+          <div class="hero-actions" style="margin-top:1.25rem;">
+            <a class="btn btn-primary" href="#plants">Browse plant cards</a>
+            <a class="btn btn-secondary" href="#notes">Open editable notes</a>
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi"><strong id="kpi-total">0</strong><span class="muted">Plants listed</span></div>
+            <div class="kpi"><strong id="kpi-planted">0</strong><span class="muted">Already planted</span></div>
+            <div class="kpi"><strong id="kpi-recommended">0</strong><span class="muted">Recommended additions</span></div>
+            <div class="kpi"><strong>42.54735, -121.37746</strong><span class="muted">Property anchor</span></div>
+          </div>
+        </div>
+        <div class="panel panel-pad">
+          <h2 style="margin-bottom:0.75rem;">Field use</h2>
+          <div class="overview-grid">
+            <div class="callout fyi">
+              <strong>Default assumptions</strong>
+              <p>Dry summers, harsh sun, rocky soils, browsing pressure, and not much pampering after planting. In other words, this is not a spa resort for thirsty divas.</p>
+            </div>
+            <div class="callout good">
+              <strong>Best bets</strong>
+              <p>Lean, well-drained, drought-tolerant plants near camp; natives and tough shrubs farther out; stream-adjacent pockets reserved for species that appreciate slightly more moisture.</p>
+            </div>
+            <div class="callout warn">
+              <strong>Frost reality</strong>
+              <p>Use late-spring timing carefully and treat warm-climate experiments with suspicion. Star jasmine gets a clipboard, a probationary badge, and zero promises.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container overview-grid">
+        <article class="panel panel-pad">
+          <h2>Site framework</h2>
+          <p class="muted">This guide assumes the campground sits on the Knot Tablelands in Klamath County, with zone 6b used as the default planning label, strong sun, dry summers, deer and pronghorn pressure, ponderosa/aspen patterns, and a recovering landscape shaped by the Bootleg fire. Use microclimates, structures, and moisture pockets to break ties when a plant seems borderline. </p>
+        </article>
+        <article class="panel panel-pad">
+          <h2>What’s in here</h2>
+          <p class="muted">Each plant card includes zone, toxicity for cats, dogs, and humans, care notes, planting instructions, ideal property location, and a verified external link when I could find a solid regional or local source. Already-planted plants are marked separately from recommended additions so you can tell what is established versus what is still garden propaganda. </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <div class="container map-wrap">
+        <div>
+          <h2>Planting map</h2>
+          <p class="muted">This is a simple schematic based on the aerial you provided, with north up. It is meant for field decisions, not courtroom drama.</p>
+        </div>
+        <div class="map-shell">
+          <svg viewBox="0 0 980 700" role="img" aria-label="Schematic planting map for the Klamath campground property">
+            <defs>
+              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.18"/>
+              </filter>
+            </defs>
+            <rect x="10" y="10" width="960" height="680" rx="28" fill="var(--color-surface-2)" stroke="var(--color-border)"/>
+            <rect x="70" y="420" width="340" height="190" rx="30" fill="#d8c3a3" opacity="0.35"/>
+            <rect x="350" y="340" width="250" height="180" rx="34" fill="#cbdcc6" opacity="0.45"/>
+            <rect x="500" y="120" width="360" height="260" rx="36" fill="#b8cfbd" opacity="0.36"/>
+            <rect x="120" y="120" width="280" height="180" rx="28" fill="#c0b59a" opacity="0.3"/>
+            <path d="M110 620 C250 565, 330 540, 420 470 S610 380, 770 285" fill="none" stroke="#9b7c55" stroke-width="26" stroke-linecap="round" opacity="0.8"/>
+            <path d="M455 485 C520 470, 575 435, 635 395" fill="none" stroke="#b68c61" stroke-width="14" stroke-linecap="round" opacity="0.8"/>
+            <path d="M390 320 C460 290, 510 250, 565 195" fill="none" stroke="#90a89a" stroke-width="18" stroke-linecap="round" stroke-dasharray="18 14" opacity="0.65"/>
+            <g fill="#5b7f5a" opacity="0.9">
+              <circle cx="210" cy="250" r="18"/><circle cx="320" cy="228" r="22"/><circle cx="455" cy="410" r="20"/><circle cx="560" cy="285" r="18"/><circle cx="610" cy="180" r="24"/><circle cx="745" cy="200" r="20"/><circle cx="788" cy="310" r="22"/><circle cx="660" cy="540" r="20"/>
+            </g>
+            <g filter="url(#shadow)">
+              <rect x="380" y="470" width="120" height="74" rx="12" fill="var(--color-surface)" stroke="var(--color-border)"/>
+              <text x="440" y="498" text-anchor="middle" font-size="18" font-family="Satoshi, sans-serif" fill="var(--color-text)">Camp core</text>
+              <text x="440" y="521" text-anchor="middle" font-size="14" font-family="Satoshi, sans-serif" fill="var(--color-text-muted)">kitchen / seating / paths</text>
+
+              <rect x="118" y="526" width="194" height="64" rx="12" fill="var(--color-surface)" stroke="var(--color-border)"/>
+              <text x="215" y="551" text-anchor="middle" font-size="18" font-family="Satoshi, sans-serif" fill="var(--color-text)">Entrance / road edge</text>
+              <text x="215" y="573" text-anchor="middle" font-size="14" font-family="Satoshi, sans-serif" fill="var(--color-text-muted)">thyme, lavender, sage</text>
+
+              <rect x="565" y="82" width="235" height="72" rx="12" fill="var(--color-surface)" stroke="var(--color-border)"/>
+              <text x="682" y="108" text-anchor="middle" font-size="18" font-family="Satoshi, sans-serif" fill="var(--color-text)">Treed interior / basin</text>
+              <text x="682" y="131" text-anchor="middle" font-size="14" font-family="Satoshi, sans-serif" fill="var(--color-text-muted)">mock orange, bee balm, serviceberry, elderberry</text>
+
+              <rect x="620" y="408" width="210" height="70" rx="12" fill="var(--color-surface)" stroke="var(--color-border)"/>
+              <text x="725" y="434" text-anchor="middle" font-size="18" font-family="Satoshi, sans-serif" fill="var(--color-text)">Transition slopes</text>
+              <text x="725" y="457" text-anchor="middle" font-size="14" font-family="Satoshi, sans-serif" fill="var(--color-text-muted)">yarrow, penstemon, buckwheat</text>
+
+              <rect x="108" y="96" width="208" height="66" rx="12" fill="var(--color-surface)" stroke="var(--color-border)"/>
+              <text x="212" y="122" text-anchor="middle" font-size="18" font-family="Satoshi, sans-serif" fill="var(--color-text)">Outer dry perimeter</text>
+              <text x="212" y="145" text-anchor="middle" font-size="14" font-family="Satoshi, sans-serif" fill="var(--color-text-muted)">bitterbrush, oceanspray, willows where moisture holds</text>
+            </g>
+            <polygon points="890,90 915,140 890,132 865,140" fill="var(--color-primary)"/>
+            <text x="890" y="72" text-anchor="middle" font-size="18" font-weight="700" font-family="Satoshi, sans-serif" fill="var(--color-text)">N</text>
+          </svg>
+        </div>
+        <div class="legend">
+          <span><i style="background:#d8c3a3"></i> Drier open ground</span>
+          <span><i style="background:#cbdcc6"></i> Camp core / managed planting</span>
+          <span><i style="background:#b8cfbd"></i> Treed / slightly moister pockets</span>
+          <span><i style="background:#9b7c55"></i> Main access / movement corridor</span>
+          <span><i style="background:#90a89a"></i> Likely drainage / seasonal moisture line</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="filters">
+      <div class="container">
+        <h2>Find plants fast</h2>
+        <div class="panel panel-pad">
+          <div class="controls-grid">
+            <div>
+              <label for="searchInput">Search name or notes</label>
+              <input id="searchInput" type="search" placeholder="Try thyme, fragrant, path, pollinator..." />
+            </div>
+            <div>
+              <label for="statusFilter">Status</label>
+              <select id="statusFilter">
+                <option value="all">All plants</option>
+                <option value="planted">Already planted</option>
+                <option value="recommended">Recommended additions</option>
+                <option value="experimental">Experimental only</option>
+              </select>
+            </div>
+            <div>
+              <label for="locationFilter">Location</label>
+              <select id="locationFilter"><option value="all">All locations</option></select>
+            </div>
+            <div>
+              <label for="waterFilter">Water</label>
+              <select id="waterFilter"><option value="all">All water levels</option></select>
+            </div>
+            <div>
+              <label for="toxicityFilter">Toxicity</label>
+              <select id="toxicityFilter">
+                <option value="all">Any toxicity</option>
+                <option value="low">Low concern only</option>
+                <option value="pet-caution">Pet caution</option>
+                <option value="human-caution">Human caution</option>
+              </select>
+            </div>
+            <div>
+              <label for="sortSelect">Sort</label>
+              <select id="sortSelect">
+                <option value="status">Status, then name</option>
+                <option value="name">Name A–Z</option>
+                <option value="location">Location</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plants">
+      <div class="container">
+        <h2>Plant cards</h2>
+        <p class="muted" style="margin-bottom:1rem;">Tap a card, scan the essentials, and decide whether the plant belongs by the path, near camp, out on the tougher perimeter, or somewhere it can quietly prove you wrong.</p>
+        <div id="plantGrid" class="plant-grid"></div>
+        <div id="emptyState" class="empty" hidden>No plants match those filters. Even the shrubs are judging the filter settings.</div>
+      </div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="container notes-grid">
+        <article class="panel panel-pad">
+          <h2>Editable field notes</h2>
+          <p class="muted">This notes box is meant for quick updates later. You can edit it directly in the browser during a session, or edit the default text inside the <span class="code-block" style="display:inline-block;padding:0.15rem 0.35rem;">SITE_NOTES_DEFAULT</span> section in the file.</p>
+          <label for="notesArea">Campground notes</label>
+          <textarea id="notesArea">Field notes:
+- Mock orange already planted.
+- Bee balm, lavender, culinary sage, several thyme species, and Shasta daisies already planted.
+- Add survival notes after each trip: thriving / sulking / mysteriously judgmental.
+- Add exact counts once the crew stops saying “a bunch.”</textarea>
+          <div class="hero-actions" style="margin-top:1rem;">
+            <button id="copyNotes" class="btn btn-secondary" type="button">Copy notes</button>
+            <button id="resetNotes" class="btn btn-secondary" type="button">Reset default notes</button>
+          </div>
+        </article>
+        <article class="panel panel-pad">
+          <h2>How to edit later</h2>
+          <div class="foot-grid" style="grid-template-columns:1fr;">
+            <div>
+              <p class="muted">This file is designed so Perplexity or a human can update it without digging through a spaghetti swamp.</p>
+              <ul style="padding-left:1.2rem;margin-top:0.75rem;display:grid;gap:0.45rem;">
+                <li>Edit <strong>PLANT_DATA</strong> to add, remove, or revise plants.</li>
+                <li>Edit <strong>SITE_NOTES_DEFAULT</strong> to change the starting notes text.</li>
+                <li>Edit the SVG labels in the map section if the camp layout evolves.</li>
+                <li>Keep verified external links only; if a link dies, remove it instead of inventing a replacement.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container foot-grid">
+        <article class="panel panel-pad">
+          <h2>GitHub upload</h2>
+          <ol style="padding-left:1.2rem;display:grid;gap:0.45rem;">
+            <li>Upload this file as <strong>index.html</strong> at the root of your GitHub Pages repo.</li>
+            <li>Commit and push to GitHub.</li>
+            <li>In GitHub, open <strong>Settings → Pages</strong>, choose the branch, and publish from the repo root.</li>
+            <li>Open the published site on iPhone or iPad and test filters, notes, and links.</li>
+          </ol>
+        </article>
+        <article class="panel panel-pad">
+          <h2>Link rules used here</h2>
+          <p class="muted">External links open in a new tab and point to regional or plant-reference pages only when I could supply a real URL. Local and regional sources were preferred where available, especially Portland Nursery and Xera.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Built as a static single-file field guide for GitHub Pages. No backend, no drama, and no database demanding emotional support.</p>
+    </div>
+  </footer>
+
+  <script>
+    const SITE_NOTES_DEFAULT = `Field notes:\n- Mock orange already planted.\n- Bee balm, lavender, culinary sage, several thyme species, and Shasta daisies already planted.\n- Add survival notes after each trip: thriving / sulking / mysteriously judgmental.\n- Add exact counts once the crew stops saying “a bunch.”`;
+
+    const PLANT_DATA = [
+      {
+        name: "Red creeping thyme",
+        botanical: "Thymus praecox 'Coccineus' / Thymus coccineus group",
+        status: "planted",
+        zone: "6b",
+        planted: "Yes — several thyme species already planted",
+        plantTime: "Late spring to early summer, after hard frosts and when soil is warming",
+        form: "Small pots or plugs; seed only for patient optimists",
+        location: "Sunny, rocky, raised edges of paths, especially the entrance path and stepping-stone zones near camp",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Yes",
+        wildlife: "Pollinators love it; generally not a deer favorite once aromatic",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["groundcover", "fragrant", "path edge", "pollinator"],
+        care: "Keep soil lean and sharply drained. Water at planting and on the follow-up visit, then let it toughen up. Avoid burying the crown under mulch.",
+        planting: "Loosen a strip about 12 inches wide and 4–6 inches deep. Plant at the same depth as the pot, 8–12 inches apart, and use a thin gravel mulch around the crown.",
+        ideal: "Entrance path, path shoulders, stepping stones, high-traffic edges where fragrance-on-contact is welcome.",
+        humor: "Tiny, durable, smells great, and unlike some campers, improves when stepped near — not on.",
+        sources: [
+          {label:"Portland Nursery — Thyme", url:"https://www.portlandnursery.com/herbs/thyme"}
+        ]
+      },
+      {
+        name: "Lavender",
+        botanical: "Lavandula angustifolia cultivars",
+        status: "planted",
+        zone: "6b",
+        planted: "Yes",
+        plantTime: "Late spring to early summer",
+        form: "1–2 gallon pots or sturdy plugs",
+        location: "Full-sun, dry, well-drained camp areas near pavilion, outdoor kitchen, entrance, or shower house",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Yes",
+        wildlife: "Pollinator favorite; browse pressure usually moderate to low",
+        toxicity: { dogs: "Pet caution if ingested", cats: "Pet caution if ingested", humans: "Low concern; essential oils more irritating than casual contact" },
+        tags: ["fragrant", "camp core", "pollinator", "already planted"],
+        care: "Keep soil lean, never soggy, and avoid rich compost. Water deeply a few times in year one, then back off. Trim lightly after flowering and avoid mulch piled on the crown.",
+        planting: "Loosen a 12–18 inch area. Add gravel if the soil is too fine, plant with the crown at or slightly above grade, and space around 18 inches apart.",
+        ideal: "Near camp structures, kitchen, path edges, and places where scent matters more than botanical perfectionism.",
+        humor: "Smells fancy, survives rough conditions, and still manages to look more put together than the tool pile.",
+        sources: [
+          {label:"Portland Nursery — Lavender", url:"https://www.portlandnursery.com/herbs/lavandula"},
+          {label:"ASPCA — Lavender toxicity", url:"https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lavender"}
+        ]
+      },
+      {
+        name: "Culinary sage",
+        botanical: "Salvia officinalis",
+        status: "planted",
+        zone: "6b",
+        planted: "Yes",
+        plantTime: "Late spring",
+        form: "Pots or plugs",
+        location: "Sunny dry spots near seating, kitchen, paths, and camp edges",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Yes",
+        wildlife: "Aromatic foliage helps with browsing pressure; pollinator-friendly flowers",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Edible culinary herb" },
+        tags: ["fragrant", "edible", "camp core", "already planted"],
+        care: "Treat like lavender’s practical cousin: lean soil, sharp drainage, and occasional deep watering during establishment. Replace before you start babying it into weakness.",
+        planting: "Dig a well-drained hole at pot depth, keep soil relatively lean, and space about 18–24 inches apart.",
+        ideal: "Around the kitchen and social areas where a brush of the foliage releases scent and the leaves can be harvested.",
+        humor: "Useful, aromatic, and quietly judgmental — basically the auntie of the herb section.",
+        sources: [
+          {label:"Portland Nursery — Easy care edible plants", url:"https://www.portlandnursery.com/docs/easycareplants/EasyCareEdibles.pdf"}
+        ]
+      },
+      {
+        name: "Bee balm / wild bergamot",
+        botanical: "Monarda spp.",
+        status: "planted",
+        zone: "6b",
+        planted: "Yes",
+        plantTime: "Late spring",
+        form: "Pots or divisions",
+        location: "Transition zones and slightly moister pockets near camp or higher stream-adjacent areas",
+        water: "Moderate",
+        sun: "Full sun to part sun",
+        fragrance: "Yes",
+        wildlife: "Excellent pollinator plant; can spread over time",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["pollinator", "fragrant", "moister pocket", "already planted"],
+        care: "Give it a slightly kinder location than the dry-hell-strip crew. It appreciates moisture during establishment and may wander by rhizomes if happy.",
+        planting: "Loosen an 18 inch area, enrich slightly only if the soil is truly miserable, plant at pot depth, and water deeply at planting and once on the follow-up visit.",
+        ideal: "Edges of camp with a little extra moisture, or slightly higher moisture-retentive pockets near the drainage line.",
+        humor: "Looks cheerful, smells good, and may attempt a gentle land grab if conditions are cozy.",
+        sources: [
+          {label:"Portland Nursery — Monarda", url:"https://www.portlandnursery.com/perennials/monarda"}
+        ]
+      },
+      {
+        name: "Mock orange",
+        botanical: "Philadelphus lewisii and related Philadelphus spp.",
+        status: "planted",
+        zone: "6b",
+        planted: "Yes",
+        plantTime: "Early spring or fall",
+        form: "Pots or bare-root shrub",
+        location: "Near bathroom/shower, pavilion, kitchen, or moister transition zones where fragrance can shine",
+        water: "Low to moderate",
+        sun: "Full sun to light shade",
+        fragrance: "Yes",
+        wildlife: "Good regional shrub and wildlife cover; some browse risk when young",
+        toxicity: { dogs: "Low concern; avoid chewing large amounts", cats: "Low concern; avoid chewing large amounts", humans: "Low concern; not edible" },
+        tags: ["regional", "fragrant", "shrub", "already planted"],
+        care: "Once established, it is pretty tough. Protect young plants from heavy browsing and prune lightly after flowering if shaping is needed.",
+        planting: "Plant in a wide hole at original depth, backfill with mostly native soil, water deeply, and mulch lightly to conserve moisture without smothering the base.",
+        ideal: "Camp-adjacent fragrance zones, slightly better soils, or edges of the treed interior where moisture lasts a bit longer.",
+        humor: "Basically orange-blossom perfume for people who prefer campfires to chandeliers.",
+        sources: [
+          {label:"Portland Nursery — Native Mock Orange", url:"https://www.portlandnursery.com/natives/philadelphus"}
+        ]
+      },
+      {
+        name: "Shasta daisy",
+        botanical: "Leucanthemum × superbum",
+        status: "planted",
+        zone: "6b",
+        planted: "Yes",
+        plantTime: "Late spring",
+        form: "Pots or divisions",
+        location: "Sunny camp and transition areas where you want obvious summer flowers",
+        water: "Low to moderate",
+        sun: "Full sun",
+        fragrance: "Light",
+        wildlife: "Pollinator-friendly; deer resistance can vary",
+        toxicity: { dogs: "Pet caution", cats: "Pet caution", humans: "Low concern; may irritate sensitive skin" },
+        tags: ["flower", "camp core", "already planted"],
+        care: "Deadhead if you want tidier repeat bloom, or leave some flowers to age if you are busy building an actual campground. Avoid soggy winter feet.",
+        planting: "Plant at pot depth in a sunny spot with decent drainage. Space 18–24 inches apart and water to establish.",
+        ideal: "Near camp activity areas, entry zones, and cheerful patches where visible color matters.",
+        humor: "Not subtle, not mysterious, and frankly kind of proud of it.",
+        sources: [
+          {label:"Portland Nursery — Shasta Daisy", url:"https://www.portlandnursery.com/perennials/leucanthemum"},
+          {label:"ASPCA — Daisy toxicity", url:"https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/daisy"}
+        ]
+      },
+      {
+        name: "Hardy ornamental sage / salvia",
+        botanical: "Hardy Salvia species and cultivars",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Late spring",
+        form: "Pots or plugs",
+        location: "Sunny, dry spots near seating, kitchen, and path edges",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Often yes",
+        wildlife: "Pollinator favorite; aromatic foliage may deter some browsing",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Usually low concern; check exact species" },
+        tags: ["pollinator", "fragrant", "camp core"],
+        care: "Lean, well-drained soil and light grooming after bloom are usually enough. Avoid tropical or tender types unless you enjoy annual disappointment.",
+        planting: "Plant at pot depth in a prepared but not rich hole, water in thoroughly, and space 18–24 inches apart.",
+        ideal: "Sunny dry camp zones that need foliage scent, flowers, and structure.",
+        humor: "The more disciplined cousin of bee balm: still fun, fewer boundary issues.",
+        sources: []
+      },
+      {
+        name: "Russian sage",
+        botanical: "Perovskia atriplicifolia / Salvia yangii",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Late spring",
+        form: "1–2 gallon pots",
+        location: "Sunny open areas in camp or transition zone, behind seating or on hot edges",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Yes",
+        wildlife: "Pollinator magnet; browse pressure often modest",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["fragrant", "pollinator", "tall accent"],
+        care: "Plant a bit high for drainage, water only during establishment, and cut back old stems in late winter or early spring.",
+        planting: "Prepare an 18–24 inch circle, keep amendments minimal, and space plants 2–3 feet apart.",
+        ideal: "Back edge of seating areas, pavilion edges, or transition areas needing height and motion.",
+        humor: "Aromatic haze generator for when you want the place to look windswept and thoughtful.",
+        sources: []
+      },
+      {
+        name: "Catmint",
+        botanical: "Nepeta × faassenii and related Nepeta",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Late spring",
+        form: "Pots or plugs",
+        location: "Sunny path edges and near seating where brushing foliage releases scent",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Yes",
+        wildlife: "Pollinator-friendly; moderate browse resistance",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern though cats may obsess over it", humans: "Low concern" },
+        tags: ["fragrant", "path edge", "pollinator"],
+        care: "Deep but infrequent water during establishment, then shear after the first flush to keep it tidy and encourage rebloom.",
+        planting: "Prepare 12–18 inch pockets, plant at pot depth, and space 18–24 inches apart.",
+        ideal: "Near sitting areas, paths, and welcoming zones where scent-on-contact is fun.",
+        humor: "Basically thyme’s fluffier, slightly more dramatic friend.",
+        sources: []
+      },
+      {
+        name: "Yarrow",
+        botanical: "Achillea millefolium and garden selections",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Late spring to early summer",
+        form: "Pots or seed",
+        location: "Transition and outer zones in sunny, dry, open ground",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Light herbal",
+        wildlife: "Good pollinator plant and tough dryland performer",
+        toxicity: { dogs: "Pet caution", cats: "Pet caution", humans: "Skin irritation possible for sensitive people" },
+        tags: ["regional", "dryland", "pollinator"],
+        care: "Very drought-tolerant once rooted. Avoid overwatering or rich soil if you want sturdy growth instead of floppy regret.",
+        planting: "Plant pots in 12–18 inch holes, or lightly press seed into prepared soil and water just enough to establish.",
+        ideal: "Open transition strips, outer camp margins, and low-water color bands.",
+        humor: "Looks casual, works hard, and doesn’t ask for compost tea.",
+        sources: []
+      },
+      {
+        name: "Sulphur buckwheat and related buckwheats",
+        botanical: "Eriogonum spp.",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Late spring or early fall",
+        form: "Pots, plugs, or seed",
+        location: "Sunny rocky slopes, perimeter, and transition zones",
+        water: "Very low",
+        sun: "Full sun",
+        fragrance: "Minimal",
+        wildlife: "Excellent pollinator plant and strong regional/native fit",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["native/regional", "dryland", "pollinator", "slope"],
+        care: "Use true dryland treatment: minimal amendment, fast drainage, and less coddling than your average nursery tag suggests.",
+        planting: "Set pots into gravelly pockets, plant at pot depth, water lightly to establish, then taper quickly.",
+        ideal: "Rocky slopes, dry perimeter bands, and transition areas where you want a native-looking, tough mound.",
+        humor: "A plant for saying, ‘Yes, I meant for this place to look like it belongs here.’",
+        sources: [
+          {label:"Xera — Genus Eriogonum", url:"https://xeraplants.com/genus/eriogonum/"},
+          {label:"Xera — Sulphur Buckwheat notes", url:"https://xeraplants.com/biome/willamette-valley-natives/page/7/"}
+        ]
+      },
+      {
+        name: "Penstemon",
+        botanical: "Regional/native Penstemon species",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Late spring",
+        form: "Pots, plugs, or seed",
+        location: "Sunny, well-drained slopes and transition zones; near camp edges for flower color",
+        water: "Low",
+        sun: "Full sun",
+        fragrance: "Minimal",
+        wildlife: "Strong pollinator and hummingbird value",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["native/regional", "pollinator", "slope"],
+        care: "Good drainage matters more than sentiment. Keep them on the lean side and don’t bury the crowns.",
+        planting: "Plant into gravelly pockets, water in well once, and then water sparingly while they establish.",
+        ideal: "Sunny slopes, camp edges, and wildflower-style bands where you want color without fussy upkeep.",
+        humor: "Elegant flower spikes for a property that is still mostly winning by grit.",
+        sources: []
+      },
+      {
+        name: "Bitterbrush",
+        botanical: "Purshia tridentata",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Early spring or fall",
+        form: "Small native nursery pots or plugs",
+        location: "Outer perimeter and drier slopes away from camp",
+        water: "Very low",
+        sun: "Full sun",
+        fragrance: "Minimal",
+        wildlife: "Strong ecosystem fit and browse plant for wildlife",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["native/regional", "outer perimeter", "wildlife"],
+        care: "Do not over-love it. Plant in native soil, water deeply once, and then let it become part of the landscape.",
+        planting: "Dig slightly wider than the rootball, avoid heavy amendments, and space shrubs several feet apart in loose clusters.",
+        ideal: "Perimeter edges and tougher slopes where ecological fit matters more than floral theatrics.",
+        humor: "If the property had a local sheriff, this would be one of the deputies.",
+        sources: []
+      },
+      {
+        name: "Serviceberry",
+        botanical: "Amelanchier spp.",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Early spring or fall",
+        form: "Bare-root or potted shrub/tree",
+        location: "Perimeter and stream-adjacent transition zones with a bit more moisture",
+        water: "Low to moderate",
+        sun: "Full sun to part sun",
+        fragrance: "Light blossom fragrance",
+        wildlife: "Great wildlife and berry plant; regional/native fit",
+        toxicity: { dogs: "Low concern; seeds like apple relatives should not be eaten in quantity", cats: "Low concern", humans: "Fruit edible when ripe; avoid chewing seeds in quantity" },
+        tags: ["native/regional", "berry", "wildlife", "transition zone"],
+        care: "A wide planting hole and occasional deep water the first year go a long way. Mulch lightly and protect from browse when young.",
+        planting: "Plant bare-root stock while dormant or potted stock at original depth. Water deeply and mulch lightly.",
+        ideal: "Moister perimeter bands and stream-adjacent transition areas where you want flowers, berries, and habitat.",
+        humor: "One of the few shrubs that can feed wildlife and still keep a straight face in a campground plan.",
+        sources: []
+      },
+      {
+        name: "Blue elderberry / elderberry",
+        botanical: "Sambucus spp.",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Early spring or fall",
+        form: "Bare-root or pots",
+        location: "Moister edges and stream-adjacent transition zones",
+        water: "Moderate",
+        sun: "Full sun to part sun",
+        fragrance: "Light floral",
+        wildlife: "Excellent wildlife attractor and good screening shrub",
+        toxicity: { dogs: "Pet caution for raw leaves, stems, and unripe fruit", cats: "Pet caution for raw plant parts", humans: "Ripe cooked fruit useful; raw stems, leaves, and unripe fruit should be avoided" },
+        tags: ["native/regional", "wildlife", "screening", "moister pocket"],
+        care: "Best where roots can chase a little more moisture than the dry upland species. Once rooted, it can be a very useful habitat and screening shrub.",
+        planting: "Plant in a wide hole at pot depth or root collar depth, mulch lightly, and water deeply at planting.",
+        ideal: "Slightly moister outer edges and drainage-adjacent zones where a larger shrub makes sense.",
+        humor: "Part useful native, part goth pantry ingredient, part bird nightclub.",
+        sources: []
+      },
+      {
+        name: "Native willow",
+        botanical: "Salix spp.",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Early spring when soil is moist and cool",
+        form: "Hardwood cuttings or container plants",
+        location: "Along or just above seasonal moisture line where soil stays moist longer",
+        water: "Moderate to high at establishment",
+        sun: "Full sun",
+        fragrance: "Minimal",
+        wildlife: "Excellent riparian/wet-pocket habitat value",
+        toxicity: { dogs: "Low concern", cats: "Low concern", humans: "Low concern; not for casual chewing except by beavers with ambition" },
+        tags: ["native/regional", "moisture line", "wildlife"],
+        care: "Only use willows where there is real moisture. This is not a bluff-country plant pretending to be adaptable.",
+        planting: "Push dormant cuttings deep into moist soil or plant container stock at pot depth while cool-season moisture remains.",
+        ideal: "Drainage line and the wetter edges of the basin or stream-adjacent area.",
+        humor: "Useful if the ground stays moist; tragic if planted as a decorative hostage in dry gravel.",
+        sources: []
+      },
+      {
+        name: "Oceanspray",
+        botanical: "Holodiscus discolor",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Early spring or fall",
+        form: "Pots",
+        location: "Slopes and edges in outer and transition zones",
+        water: "Low",
+        sun: "Full sun to light shade",
+        fragrance: "Light",
+        wildlife: "Useful wildlife cover and strong regional fit",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["native/regional", "outer perimeter", "wildlife"],
+        care: "Let it naturalize. It does not need spa treatment, just a good start and decent drainage.",
+        planting: "Dig a slightly wider hole, plant at pot depth, water deeply at planting, and maybe once more if conditions are brutal.",
+        ideal: "Outer edges and transition slopes where you want a native shrub that belongs in the scene.",
+        humor: "A classy native shrub with strong ‘I was here before your site plan’ energy.",
+        sources: [
+          {label:"Native Plants PNW — Oceanspray", url:"https://nativeplantspnw.com/2016/03/"}
+        ]
+      },
+      {
+        name: "Lilac",
+        botanical: "Syringa spp.",
+        status: "recommended",
+        zone: "6b",
+        planted: "Not confirmed",
+        plantTime: "Early spring or fall",
+        form: "Potted shrub or bare-root",
+        location: "Closer to camp in slightly better soils, such as drive, entrance, or pavilion edge",
+        water: "Low to moderate",
+        sun: "Full sun",
+        fragrance: "Yes",
+        wildlife: "Browse risk when young; mostly grown for fragrance and bloom",
+        toxicity: { dogs: "Generally low concern", cats: "Generally low concern", humans: "Low concern" },
+        tags: ["fragrant", "camp edge", "shrub"],
+        care: "Give it a better-than-average spot and enough airflow. Protect young shrubs from browse and avoid overwatering once established.",
+        planting: "Plant in a wide hole at original depth, improve only lightly if the soil is terrible, and water deeply after planting.",
+        ideal: "Drive and entrance zones, camp-adjacent fragrance pockets, and more managed planting beds.",
+        humor: "The classic spring perfume machine — very pretty, slightly high-maintenance by local standards.",
+        sources: []
+      },
+      {
+        name: "Star jasmine",
+        botanical: "Trachelospermum jasminoides",
+        status: "experimental",
+        zone: "6b? only with protection",
+        planted: "Not confirmed",
+        plantTime: "Late spring with warm soil",
+        form: "1–2 gallon pot",
+        location: "Only the warmest microclimates near future structures or in large movable containers",
+        water: "Moderate",
+        sun: "Full sun with protection or warm reflected heat",
+        fragrance: "Yes, strongly",
+        wildlife: "Grown for fragrance more than habitat value here",
+        toxicity: { dogs: "Generally low concern; monitor chewing", cats: "Generally low concern; monitor chewing", humans: "Sap may irritate sensitive skin" },
+        tags: ["experimental", "fragrant", "warm microclimate"],
+        care: "Treat as a trial, not a pillar of the plan. Use a protected south-facing spot or container, provide support, and be ready with frost cloth.",
+        planting: "Plant in sharply drained soil at pot depth near a structure, water deeply, mulch the root zone lightly, and plan for cold protection.",
+        ideal: "Pavilion posts, shower-house wall, outdoor kitchen container, or another warm microclimate that cheats the rules.",
+        humor: "Officially on probation. Charming, fragrant, and one cold snap away from a performance review.",
+        sources: []
+      }
+    ];
+
+    const themeButton = document.querySelector('[data-theme-toggle]');
+    const root = document.documentElement;
+    let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', theme);
+    const setThemeIcon = () => {
+      themeButton.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+      themeButton.innerHTML = theme === 'dark'
+        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    };
+    setThemeIcon();
+    themeButton.addEventListener('click', () => {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', theme);
+      setThemeIcon();
+    });
+
+    const plantGrid = document.getElementById('plantGrid');
+    const emptyState = document.getElementById('emptyState');
+    const searchInput = document.getElementById('searchInput');
+    const statusFilter = document.getElementById('statusFilter');
+    const locationFilter = document.getElementById('locationFilter');
+    const waterFilter = document.getElementById('waterFilter');
+    const toxicityFilter = document.getElementById('toxicityFilter');
+    const sortSelect = document.getElementById('sortSelect');
+    const notesArea = document.getElementById('notesArea');
+
+    document.getElementById('resetNotes').addEventListener('click', () => notesArea.value = SITE_NOTES_DEFAULT);
+    document.getElementById('copyNotes').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(notesArea.value);
+        document.getElementById('copyNotes').textContent = 'Copied';
+        setTimeout(() => document.getElementById('copyNotes').textContent = 'Copy notes', 1400);
+      } catch {
+        document.getElementById('copyNotes').textContent = 'Copy failed';
+        setTimeout(() => document.getElementById('copyNotes').textContent = 'Copy notes', 1400);
+      }
+    });
+
+    const unique = (arr) => [...new Set(arr)].sort((a, b) => a.localeCompare(b));
+    unique(PLANT_DATA.map(p => p.location)).forEach(location => {
+      const option = document.createElement('option');
+      option.value = location;
+      option.textContent = location;
+      locationFilter.appendChild(option);
+    });
+    unique(PLANT_DATA.map(p => p.water)).forEach(water => {
+      const option = document.createElement('option');
+      option.value = water;
+      option.textContent = water;
+      waterFilter.appendChild(option);
+    });
+
+    const toxicityBand = (tox) => {
+      const values = Object.values(tox).join(' ').toLowerCase();
+      if (values.includes('pet caution')) return 'pet-caution';
+      if (values.includes('irritat') || values.includes('avoid') || values.includes('sap') || values.includes('raw')) return 'human-caution';
+      return 'low';
+    };
+
+    const renderCards = () => {
+      const q = searchInput.value.trim().toLowerCase();
+      const status = statusFilter.value;
+      const location = locationFilter.value;
+      const water = waterFilter.value;
+      const tox = toxicityFilter.value;
+      const sort = sortSelect.value;
+
+      let plants = PLANT_DATA.filter((plant) => {
+        const blob = [plant.name, plant.botanical, plant.location, plant.care, plant.planting, plant.ideal, plant.humor, plant.tags.join(' ')].join(' ').toLowerCase();
+        const matchQ = !q || blob.includes(q);
+        const matchStatus = status === 'all' || plant.status === status;
+        const matchLocation = location === 'all' || plant.location === location;
+        const matchWater = water === 'all' || plant.water === water;
+        const matchTox = tox === 'all' || toxicityBand(plant.toxicity) === tox;
+        return matchQ && matchStatus && matchLocation && matchWater && matchTox;
+      });
+
+      plants.sort((a, b) => {
+        if (sort === 'name') return a.name.localeCompare(b.name);
+        if (sort === 'location') return a.location.localeCompare(b.location) || a.name.localeCompare(b.name);
+        const rank = {planted: 0, recommended: 1, experimental: 2};
+        return (rank[a.status] - rank[b.status]) || a.name.localeCompare(b.name);
+      });
+
+      plantGrid.innerHTML = '';
+      emptyState.hidden = plants.length !== 0;
+
+      plants.forEach((plant) => {
+        const article = document.createElement('article');
+        article.className = 'plant-card';
+        article.innerHTML = `
+          <div class="plant-head">
+            <div>
+              <div class="plant-name"><strong>${plant.name}</strong></div>
+              <div class="muted"><em>${plant.botanical}</em></div>
+            </div>
+            <span class="status ${plant.status}">${plant.status.replace('-', ' ')}</span>
+          </div>
+          <div class="tag-list">${plant.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+          <div class="meta-grid">
+            <div class="meta"><strong>Zone</strong><span>${plant.zone}</span></div>
+            <div class="meta"><strong>Sun</strong><span>${plant.sun}</span></div>
+            <div class="meta"><strong>Water</strong><span>${plant.water}</span></div>
+            <div class="meta"><strong>Planted?</strong><span>${plant.planted}</span></div>
+            <div class="meta"><strong>When to plant</strong><span>${plant.plantTime}</span></div>
+            <div class="meta"><strong>Form</strong><span>${plant.form}</span></div>
+          </div>
+          <div class="plant-body">
+            <section><strong>Ideal location</strong><p>${plant.location}</p></section>
+            <section><strong>Toxicity</strong><ul><li>Dogs: ${plant.toxicity.dogs}</li><li>Cats: ${plant.toxicity.cats}</li><li>Humans: ${plant.toxicity.humans}</li></ul></section>
+            <section><strong>Care guide</strong><p>${plant.care}</p></section>
+            <section><strong>Planting instructions</strong><p>${plant.planting}</p></section>
+            <section><strong>Why here</strong><p>${plant.ideal}</p></section>
+            <section><strong>Camp note</strong><p>${plant.humor}</p></section>
+            ${plant.sources.length ? `<section><strong>External links</strong><ul>${plant.sources.map(source => `<li><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.label}</a></li>`).join('')}</ul></section>` : ''}
+          </div>
+        `;
+        plantGrid.appendChild(article);
+      });
+    };
+
+    document.getElementById('kpi-total').textContent = PLANT_DATA.length;
+    document.getElementById('kpi-planted').textContent = PLANT_DATA.filter(p => p.status === 'planted').length;
+    document.getElementById('kpi-recommended').textContent = PLANT_DATA.filter(p => p.status === 'recommended').length;
+
+    [searchInput, statusFilter, locationFilter, waterFilter, toxicityFilter, sortSelect].forEach(el => el.addEventListener('input', renderCards));
+    renderCards();
+  </script>
+</body>
+</html>
